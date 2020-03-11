@@ -6,6 +6,7 @@ class DrumPad extends Component {
 
     this.playMusic = this.playMusic.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
+  
   }
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyPress);

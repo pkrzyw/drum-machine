@@ -70,25 +70,21 @@ const DrumMachine = () => {
     />
   ));
   return (
-    <div className="container p-0 mt-5" id="drum-machine">
-      <div className="d-flex justify-content-center py-3 mx-0 bg-dark text-light">
-        <h2 className="display-4">Drum Machine</h2>
-      </div>
-      <div
-        id="display"
-        className="container bg-secondary justify-content-center"
-      >
-        <div className="row border justify-content-center">
-          <div className="col-3  my-3">
-            <p
-              className="text-center badge badge-pill badge-warning text-truncate"
-              style={{ width: "12rem" }}
-            >
-              {display}
-            </p>
-          </div>
+    <div className="container">
+      <div id="drum-machine" className="rounded-lg shadow bg-dark mt-2">
+        <div className="d-flex justify-content-center py-3 mx-0 text-light">
+          <h2 className="display-4">Drum Machine</h2>
         </div>
-        <div className="row p-1 mb-2 w-75">{renderPads}</div>
+        <div id="display" className="container justify-content-center">
+          <div className="row justify-content-center">
+            <div className="col-3  my-3">
+              <p className="text-center badge badge-secondary text-truncate">
+                {display}
+              </p>
+            </div>
+          </div>
+          <div className="row p-1 mb-2 w-75">{renderPads}</div>
+        </div>
       </div>
     </div>
   );
