@@ -1,0 +1,20 @@
+// Override default variables before the import
+$body-bg: #aaaaaa;
+
+#drum-machine {
+  width: 540px;
+  margin: auto;
+  border: 5px;
+
+  border-radius: 23px;
+  background: linear-gradient(145deg, #004284, #004e9d);
+}
+
+.drum-pad {
+  border-radius: 11px;
+  background: #004993;
+  box-shadow: 7px 7px 20px #003e7d, -7px -7px 20px #0054a9;
+}
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";

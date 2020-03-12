@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DrumPad from "./DrumPad";
+import "../styles/DrumMachine.scss";
 
 const pads = [
   {
@@ -71,11 +72,11 @@ const DrumMachine = () => {
   ));
   return (
     <div className="container">
-      <div id="drum-machine" className="rounded-lg shadow bg-dark mt-2">
+      <div id="drum-machine" className="mt-4">
         <div className="d-flex justify-content-center py-3 mx-0 text-light">
           <h2 className="display-4">Drum Machine</h2>
         </div>
-        <div id="display" className="container justify-content-center">
+        <div id="display" className="container">
           <div className="row justify-content-center">
             <div className="col-3  my-3">
               <p className="text-center badge badge-secondary text-truncate">
@@ -83,7 +84,7 @@ const DrumMachine = () => {
               </p>
             </div>
           </div>
-          <div className="row p-1 mb-2 w-75">{renderPads}</div>
+          <div className="row p-3 m-auto">{renderPads}</div>
         </div>
       </div>
     </div>

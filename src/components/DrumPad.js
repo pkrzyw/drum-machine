@@ -6,7 +6,6 @@ class DrumPad extends Component {
 
     this.playMusic = this.playMusic.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
-  
   }
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyPress);
@@ -20,7 +19,7 @@ class DrumPad extends Component {
       this.playMusic();
     }
   }
-  playMusic(event) {
+  playMusic() {
     const sound = document.getElementById(this.props.innerText);
     sound.currentTime = 0;
     sound.play();
@@ -30,7 +29,7 @@ class DrumPad extends Component {
     return (
       <div className="col-4">
         <button
-          className="drum-pad btn btn-dark btn-block mt-3 py-3 justify-content-center shadow"
+          className="drum-pad btn btn-block py-3 my-2 justify-content-center"
           type="button"
           id={this.props.padId}
           onClick={this.playMusic}
